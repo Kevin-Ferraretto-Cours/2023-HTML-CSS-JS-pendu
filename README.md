@@ -1,22 +1,71 @@
 # Jeu du Pendu
 
-Bienvenue dans le Jeu du Pendu, une création interactive en HTML, CSS, et JavaScript qui vous défie de deviner le mot caché avant d'épuiser toutes vos tentatives ! Les effets sonores ajoutent une immersion supplémentaire à votre expérience de jeu.
+Une implémentation moderne et immersive du célèbre Jeu du Pendu, développée avec les technologies web standards et enrichie d'effets sonores pour une expérience de jeu captivante.
 
-## Aperçu
+## 📋 Description
 
-Le Jeu du Pendu vous met au défi de deviner un mot en proposant des lettres. Chaque lettre incorrecte vous rapproche d'une issue malheureuse, alors choisissez avec soin ! Les effets sonores ajoutent une dimension supplémentaire à l'excitation du jeu.
+Le Jeu du Pendu est un jeu de devinettes de mots où le joueur doit découvrir un mot caché lettre par lettre avant d'épuiser ses tentatives. Cette version web propose une interface élégante, des animations fluides et des effets sonores qui améliorent l'immersion, rendant chaque partie plus intense et divertissante.
 
-## Fonctionnalités
+## ✨ Fonctionnalités
 
-- **HTML/CSS/JS :** Utilisation des technologies web de base pour créer une interface utilisateur interactive et réactive.
+- **Interface responsive** - Jouez sur n'importe quel appareil, du smartphone à l'ordinateur de bureau
+- **Animation du pendu** - Visualisation progressive du dessin du pendu à chaque erreur
+- **Effets sonores immersifs** - Sons dynamiques pour les réussites, échecs, et victoires
+- **Système de score** - Suivi de vos performances entre les parties
+- **Design minimaliste** - Interface épurée et intuitive
 
-- **Effets Sonores :** Une bande sonore dynamique ajoute une immersion accrue à chaque étape du jeu, de la sélection des lettres à la résolution du mot.
+## 🚀 Installation
 
-- **Personnalisation des Mots :** vous pouvez éditer la liste de mots directement dans le fichier `game.js` en modifiant la variable `programming_languages`. Ajoutez de nouveaux mots pour une expérience de jeu renouvelée !
+Aucune installation complexe n'est requise !
 
-## Comment Utiliser
+```bash
+# Cloner le dépôt
+git clone https://github.com/Kevin-Ferraretto-Cours/2023-HTML-CSS-JS-pendu.git
 
-1. Clonez le repository sur votre machine locale.
-2. Ouvrez le fichier `index.html` dans votre navigateur.
-3. Jouez au Jeu du Pendu en devinant les lettres et en évitant la pendaison !
-4. Explorez le code source pour personnaliser le jeu selon vos préférences.
+# Accéder au répertoire
+cd 2023-HTML-CSS-JS-pendu
+```
+
+## 🎮 Comment jouer
+
+1. **Lancez le jeu** en ouvrant le fichier `index.html`
+2. **Devinez le mot caché** en cliquant sur les lettres du clavier virtuel
+3. **Chaque lettre correcte** révèle sa position dans le mot secret
+4. **Chaque erreur** fait progresser le dessin du pendu
+5. **Gagnez** en devinant le mot complet avant que le dessin du pendu ne soit terminé
+
+## 🛠️ Personnalisation
+
+Vous pouvez facilement personnaliser le jeu selon vos préférences :
+
+### Ajouter de nouveaux mots
+Modifiez la variable `programming_languages` dans le fichier `game.js` :
+
+```javascript
+let programming_languages = [
+	"python",
+	"javascript",
+	"java"
+];
+```
+
+### Modifier les effets sonores
+Remplacez les fichiers audio dans le dossier `sounds/` par vos propres effets sonores (formats MP3 ou WAV recommandés).
+
+## 💻 Technologies utilisées
+
+- **HTML5** - Structure de la page et éléments interactifs
+- **CSS3** - Mise en page, animations et design responsive
+- **JavaScript** - Logique du jeu et manipulation du DOM
+
+## 📈 Roadmap
+
+- [ ] Ajout de catégories de mots thématiques
+- [ ] Implémentation d'un mode multijoueur local
+- [ ] Sauvegarde des meilleurs scores
+- [ ] Support de plusieurs langues
+- [ ] Mode "Contre-la-montre"
+
+## 📜 Licence
+
+Ce projet est distribué sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
